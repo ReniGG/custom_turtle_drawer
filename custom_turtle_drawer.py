@@ -67,6 +67,7 @@ def remove_color():
                 for color in remove_another_color:
                     if color in default_colors:
                         default_colors.remove(color)
+                         close_if_default_colors_empty()
                     else:
                         print(f'Colors not found.')
             else: draw_shape(length)
